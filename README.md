@@ -22,10 +22,20 @@ $ pathfinder
 $ sourcefinder # optional
 ```
 
-## Other directories
+### Changing the base directory
 
-pathfinder can take any number of additional directories to export to your `$PATH`. Simply add them as arguments:
+If you'd rather not have your base Pathfinder directory be `~/pathfinder`, just point `$PATHFINDER_DIR` to a different location *before* invoking `pathfinder` or `sourcefinder`:
 
-```
+```bash
+$ source pathfinder/pathfinder.sh
+$ export PATHFINDER_DIR=~/fun
+$ pathfinder
+
+### Changing the export directories
+
+If installed projects don't have a `bin` or `source` directory, Pathfinder can take any number of additional directories to export to your `$PATH`:
+
+```bash
 $ pathfinder dist out
+$ sourcefinder scripts
 ```
