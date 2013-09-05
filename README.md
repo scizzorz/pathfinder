@@ -21,3 +21,11 @@ $ source pathfinder/pathfinder.sh
 $ pathfinder
 $ sourcefinder # optional
 ```
+
+## Other directories
+
+pathfinder can take any number of additional directories to export to your `$PATH`. Simply add them as arguments:
+
+```
+$ pathfinder dist out
+```
