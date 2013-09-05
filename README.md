@@ -30,6 +30,7 @@ If you'd rather not have your base Pathfinder directory be `~/pathfinder`, just 
 $ source pathfinder/pathfinder.sh
 $ export PATHFINDER_DIR=~/fun
 $ pathfinder
+```
 
 ### Changing the export directories
 
