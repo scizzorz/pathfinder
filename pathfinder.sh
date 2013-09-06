@@ -9,7 +9,7 @@ function pathfinder {
 		[ "$1" == "-x" ] && shift
 
 		name_string="-name bin"
-		for path in ${*:1}; do
+		for path in $@; do
 			name_string+=" -o -name $path"
 		done
 
@@ -20,7 +20,7 @@ function pathfinder {
 }
 function sourcefinder {
 	name_string="-name source"
-	for path in ${*:1}; do
+	for path in $@; do
 		name_string+=" -o -name $path"
 	done
 
